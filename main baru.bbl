@@ -1,0 +1,151 @@
+\begin{thebibliography}{10}
+
+\bibitem{aslam}
+J.~A. Aslam and V.~Pavlu.
+\newblock Query hardness estimation using jensen-shannon divergence among
+  multiple scoring functions.
+\newblock In {\em Proceedings of the 29th European Conference on Information
+  Retrieval Research (ECIR)}, pages 198--209, 2007.
+
+\bibitem{blei}
+D.~M. Blei, A.~Y. Ng, and M.~I. Jordan.
+\newblock Latent dirichlet allocation.
+\newblock In {\em Proceedings of the 14th International Conference on Neural
+  Information Processing Systems: Natural and Synthetic}, pages 601--608, 2001.
+
+\bibitem{briggs}
+R.~O. Briggs, G.~Kolfschoten, and G.~J. de~Vreede.
+\newblock Toward a theoretical model of consensus building.
+\newblock In {\em Proceedings of the 11th Americas Conference on Information
+  Systems}, 2005.
+
+\bibitem{butler}
+C.~T.~L. Butler and A.~Rothstein.
+\newblock {\em On conflict and consensus; A handbook on formal consesus
+  decision making}.
+\newblock Food Not Bombs Publishing, Takoma Park, 2004.
+
+\bibitem{cheng}
+X.~Cheng, X.~Yan, Y.~Lan, and J.~Guo.
+\newblock Btm: Topic modeling over short texts.
+\newblock In {\em IEEE Transactions on Knowledge and Data Engineering}, pages
+  2928--2941, 2014.
+
+\bibitem{li}
+C.~Li et~al.
+\newblock Topic modeling for short texts with auxiliary word embeddings.
+\newblock In {\em Proceedings of the 39th International ACM SIGIR Conference on
+  Research and Development in Information Retrieval}, pages 165--174, 2016.
+
+\bibitem{li2}
+C.~Li et~al.
+\newblock Enhancing topic modeling for short texts with auxiliary word
+  embeddings.
+\newblock In {\em ACM Transactions on Information Systems (TOIS)}, pages 1--30,
+  2017.
+
+\bibitem{katagiri}
+Y.~Katagiri et~al.
+\newblock Implicit proposal filtering in multi-party consensus-building
+  conversations.
+\newblock In {\em Proceedings of the 9 th SIGdial Workshop on Discourse and
+  Dialogue}, pages 100--103, 2008.
+
+\bibitem{zuo2}
+Y.~Zuo et~al.
+\newblock Topic modeling of short texts: A pseudodocument view.
+\newblock In {\em Proceedings of the 22nd ACM SIGKDD international conference
+  on knowledge discovery and data mining}, pages 2105--2114, 2016.
+
+\bibitem{goto2}
+S.~Goto, O.~Yoshie, and S.~Fujimura.
+\newblock Empirical study of multi-party workshop facilitation in strategy
+  planning phase for product lifecycle management (plm) system.
+\newblock In {\em Proceedings of International Federation for Information
+  Processing (IFIP) International Conference on Product Lifecycle Management},
+  pages 82--93, 2019.
+
+\bibitem{goto1}
+S.~Goto, O.~Yoshie, and S.~Fujimura.
+\newblock Preliminary study: Text mining approach to dialog data of
+  stakeholders on requirement decision for enterprise information system.
+\newblock In {\em Proceedings of the 10th Annual European Decision Sciences
+  Institute (EDSI) Conference}, 2019.
+
+\bibitem{he}
+N.~He, S.~Yao, and O.~Yoshie.
+\newblock Emotional speech classification in consensus building.
+\newblock In {\em Proceedings of the 10th International Conference on
+  Communications}, pages 1--4, 2014.
+
+\bibitem{matt}
+C.~H. Matt and A.~Benlian.
+\newblock Digital transformation strategies.
+\newblock In {\em Business \& Information Systems Engineering}, volume~57,
+  pages 339--343, 2015.
+
+\bibitem{nguyen}
+D.~Q. Nguyen, R.~Billingsley, L.~Du, and M.~Johnson.
+\newblock Improving topic models with latent feature word representations.
+\newblock In {\em Transactions of the Association for Computational
+  Linguistics}, volume~3, pages 299--313, 2015.
+
+\bibitem{qiang}
+J.~Qiang, Z.~Qian, Y.~Li, Y.~Yuan, and X.~Wu.
+\newblock Short text topic modeling techniques, applications, and performance:
+  a survey.
+\newblock In {\em IEEE Transactions on Knowledge and Data Engineering}, 2020.
+
+\bibitem{quan}
+X.~Quan, C.~Kit, Y.~Ge, and S.~J. Pan.
+\newblock Short and sparse text topic modeling via self-aggregation.
+\newblock In {\em Proceedings of the 24th International Conference on
+  Artificial Intelligence}, pages 2270--2276, 2015.
+
+\bibitem{shepherd}
+M.~M. Shepherd and W.~B.~Martz Jr.
+\newblock Group consensus: Do we know it when we see it?
+\newblock In {\em Proceedings of the Hawaii International Conference on System
+  Science}, 2004.
+
+\bibitem{stark}
+J.~Stark.
+\newblock {\em Product lifecycle management}.
+\newblock Springer, 2015.
+
+\bibitem{wei}
+EDA: Easy Data~Augmentation techniques for boosting performance on
+  text~classification tasks.
+\newblock J. wei and k. zou.
+\newblock In {\em Proceedings of the 2019 Conference on Empirical Methods in
+  Natural Language Processing and the 9th International Joint Conference on
+  Natural Language Processing (EMNLP-IJCNLP)}, pages 6383--6389, 2019.
+
+\bibitem{susskind}
+J.~Thomas-Lamar, S.~Mckearnan, and L.~Susskind.
+\newblock {\em The consensus building handbook: a comprehensive guide to
+  reaching agreement}, pages 7--9.
+\newblock SAGE Publications, 1999.
+
+\bibitem{wood}
+J.~Wood, P.~Tan, W.~Wang, and C.~Arnold.
+\newblock Source-lda: Enhancing probabilistic topic models using prior
+  knowledge sources.
+\newblock In {\em Proceedings of the 33rd IEEE International Conference on Data
+  Engineering (ICDE)}, pages 411--422, 2017.
+
+\bibitem{yin}
+J.~Yin and J.~Wang.
+\newblock A dirichlet multinomial mixture model-based approach for short text
+  clustering.
+\newblock In {\em Proceedings of the 20th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, pages 233--242, 2014.
+
+\bibitem{zuo}
+Y.~Zuo, J.~Zhao, and K.~Xu.
+\newblock Word network topic model: a simple but general solution for short and
+  imbalanced texts.
+\newblock In {\em Journal of Knowledge and Information Systems}, pages
+  379--398, 2016.
+
+\end{thebibliography}

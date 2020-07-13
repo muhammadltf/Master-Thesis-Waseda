@@ -12,16 +12,16 @@
 \BOOKMARK [0][-]{chapter.2}{2 Proposed Method}{}% 12
 \BOOKMARK [1][-]{section.2.1}{2.1 Data Augmentation}{chapter.2}% 13
 \BOOKMARK [1][-]{section.2.2}{2.2 Topic Model with Background Knowledge}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Dirichlet Multinomial Mixture [16]}{section.2.2}% 15
-\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Latent-Feature LDA [17]}{section.2.2}% 16
-\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Latent-Feature DMM [17]}{section.2.2}% 17
-\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Generalized Polya Urn DMM [18]}{section.2.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 GPU Poisson-based DMM [19]}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Biterm Topic Model [20]}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Word Network Topic Model [21]}{section.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.8}{2.2.8 Self-aggregate Topic Model [22]}{section.2.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.9}{2.2.9 Pseudo-based Topic Model [23]}{section.2.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.10}{2.2.10 Source-LDA [14]}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Dirichlet Multinomial Mixture yin}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Latent-Feature LDA nguyen}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Latent-Feature DMM nguyen}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Generalized Polya Urn DMM li}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 GPU Poisson-based DMM li2}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Biterm Topic Model cheng}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Word Network Topic Model zuo}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.8}{2.2.8 Self-aggregate Topic Model quan}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.9}{2.2.9 Pseudo-based Topic Model zuo2}{section.2.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.10}{2.2.10 Source-LDA wood}{section.2.2}% 24
 \BOOKMARK [1][-]{section.2.3}{2.3 Distribution Similarity}{chapter.2}% 25
 \BOOKMARK [0][-]{chapter.3}{3 Experiment}{}% 26
 \BOOKMARK [1][-]{section.3.1}{3.1 Preprocessing and Augmentation}{chapter.3}% 27
@@ -31,4 +31,4 @@
 \BOOKMARK [1][-]{section.4.1}{4.1 Quantitative Evaluation: Topic Coherence Value}{chapter.4}% 31
 \BOOKMARK [1][-]{section.4.2}{4.2 Qualitative Evaluation: Review by Professional Consultant}{chapter.4}% 32
 \BOOKMARK [0][-]{chapter.5}{5 Conclusion}{}% 33
-\BOOKMARK [0][-]{chapter.6}{6 References}{}% 34
+\BOOKMARK [0][-]{section*.11}{Bibliography}{}% 34
