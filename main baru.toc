@@ -9,26 +9,27 @@
 \contentsline {chapter}{\numberline {2}Proposed Method}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Data Augmentation}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Topic Model with Background Knowledge}{6}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Dirichlet Multinomial Mixture\nobreakspace {}\cite {yin}}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Latent-Feature LDA\nobreakspace {}\cite {nguyen}}{7}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Latent-Feature DMM\nobreakspace {}\cite {nguyen}}{8}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Generalized Polya Urn DMM\nobreakspace {}\cite {li}}{8}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}GPU Poisson-based DMM\nobreakspace {}\cite {li2}}{8}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}Biterm Topic Model\nobreakspace {}\cite {cheng}}{8}{subsection.2.2.6}
-\contentsline {subsection}{\numberline {2.2.7}Word Network Topic Model\nobreakspace {}\cite {zuo}}{9}{subsection.2.2.7}
-\contentsline {subsection}{\numberline {2.2.8}Self-aggregate Topic Model\nobreakspace {}\cite {quan}}{9}{subsection.2.2.8}
-\contentsline {subsection}{\numberline {2.2.9}Pseudo-based Topic Model\nobreakspace {}\cite {zuo2}}{9}{subsection.2.2.9}
-\contentsline {subsection}{\numberline {2.2.10}Source-LDA\nobreakspace {}\cite {wood}}{9}{subsection.2.2.10}
-\contentsline {section}{\numberline {2.3}Distribution Similarity}{10}{section.2.3}
-\contentsline {chapter}{\numberline {3}Experiment}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Preprocessing and Augmentation}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Experiment using Standard Topic Model}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Experiment using Topic Model with Background Knowledge}{12}{section.3.3}
-\contentsline {chapter}{\numberline {4}Results and Discussion}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Quantitative Evaluation: Topic Coherence Value}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Qualitative Evaluation: Review by Professional Consultant}{15}{section.4.2}
-\contentsline {paragraph}{Company 1}{17}{section*.7}
-\contentsline {paragraph}{Company 2}{17}{section*.8}
-\contentsline {paragraph}{Company 3}{17}{section*.9}
-\contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.5}
-\contentsline {chapter}{Bibliography}{21}{section*.11}
+\contentsline {subsection}{\numberline {2.2.1}Dirichlet Multinomial Mixture\nobreakspace {}\cite {yin}}{9}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Latent-Feature LDA\nobreakspace {}\cite {nguyen}}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Latent-Feature DMM\nobreakspace {}\cite {nguyen}}{10}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Generalized Polya Urn DMM\nobreakspace {}\cite {li}}{10}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}GPU Poisson-based DMM\nobreakspace {}\cite {li2}}{11}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Biterm Topic Model\nobreakspace {}\cite {cheng}}{12}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}Word Network Topic Model\nobreakspace {}\cite {zuo}}{12}{subsection.2.2.7}
+\contentsline {subsection}{\numberline {2.2.8}Self-aggregate Topic Model\nobreakspace {}\cite {quan}}{13}{subsection.2.2.8}
+\contentsline {subsection}{\numberline {2.2.9}Pseudo-based Topic Model\nobreakspace {}\cite {zuo2}}{13}{subsection.2.2.9}
+\contentsline {subsection}{\numberline {2.2.10}Source-LDA\nobreakspace {}\cite {wood}}{14}{subsection.2.2.10}
+\contentsline {section}{\numberline {2.3}Distribution Similarity}{14}{section.2.3}
+\contentsline {chapter}{\numberline {3}Experiment}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Preprocessing and Augmentation}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Experiment using Standard Topic Model}{19}{section.3.2}
+\contentsline {section}{\numberline {3.3}Experiment using Topic Model with Background Knowledge}{20}{section.3.3}
+\contentsline {chapter}{\numberline {4}Results and Discussion}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Quantitative Evaluation: Topic Coherence Value}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Qualitative Evaluation: Review by Professional Consultant}{23}{section.4.2}
+\contentsline {paragraph}{Company 1}{27}{section*.28}
+\contentsline {paragraph}{Company 2}{28}{section*.30}
+\contentsline {paragraph}{Company 3}{29}{section*.32}
+\contentsline {paragraph}{Company 4}{30}{section*.34}
+\contentsline {chapter}{\numberline {5}Conclusion}{33}{chapter.5}
+\contentsline {chapter}{Bibliography}{35}{section*.35}

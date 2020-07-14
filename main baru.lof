@@ -1,6 +1,24 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces LDA Plate Notation\relax }}{7}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces DMM Plate Notation\relax }}{9}{figure.caption.10}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces LFLDA Plate Notation\relax }}{9}{figure.caption.11}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces LFDMM Plate Notation\relax }}{10}{figure.caption.12}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces GPUDMM Overview\relax }}{11}{figure.caption.13}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces GPUPDMM Plate Notation\relax }}{11}{figure.caption.14}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces BTM Plate Notation\relax }}{12}{figure.caption.15}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces WNTM Document Representation\relax }}{12}{figure.caption.16}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces SATM Plate Notation\relax }}{13}{figure.caption.17}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces PTM Plate Notation\relax }}{14}{figure.caption.18}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Source-LDA Plate Notation\relax }}{14}{figure.caption.19}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Experiment Flowchart\relax }}{18}{figure.caption.20}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Topic coherence value based on topic model and sentence augmentation process performed on Dialog Data\relax }}{20}{figure.caption.23}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Topic coherence value based on background knowledge (BK) augmentation process\relax }}{21}{figure.caption.24}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Topic Coherence value comparison with previous research\relax }}{24}{figure.caption.25}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Average Topic distributions for company 1\relax }}{27}{figure.caption.27}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Average Topic distributions for company2\relax }}{28}{figure.caption.29}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Average Topic distributions for company 3\relax }}{29}{figure.caption.31}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Average Topic distributions for company 4\relax }}{30}{figure.caption.33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces \relax }}{20}{figure.caption.10}

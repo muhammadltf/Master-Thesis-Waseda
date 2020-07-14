@@ -1,5 +1,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Dataset Characteristics\relax }}{6}{table.caption.7}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Topic Model Experiment\relax }}{8}{table.caption.9}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Augmented Dataset Characteristics\relax }}{18}{table.caption.21}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Dataset Property\relax }}{19}{table.caption.22}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Mapping of PLM Topics\relax }}{24}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Convergence Rate and Top Words\relax }}{26}{table.caption.26}
 \addvspace {10\p@ }
