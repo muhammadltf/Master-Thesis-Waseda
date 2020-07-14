@@ -23,13 +23,14 @@
 \contentsline {chapter}{\numberline {3}Experiment}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}Preprocessing and Augmentation}{17}{section.3.1}
 \contentsline {section}{\numberline {3.2}Experiment using Standard Topic Model}{19}{section.3.2}
-\contentsline {section}{\numberline {3.3}Experiment using Topic Model with Background Knowledge}{20}{section.3.3}
-\contentsline {chapter}{\numberline {4}Results and Discussion}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Quantitative Evaluation: Topic Coherence Value}{23}{section.4.1}
-\contentsline {section}{\numberline {4.2}Qualitative Evaluation: Review by Professional Consultant}{23}{section.4.2}
-\contentsline {paragraph}{Company 1}{27}{section*.28}
-\contentsline {paragraph}{Company 2}{28}{section*.30}
-\contentsline {paragraph}{Company 3}{29}{section*.32}
-\contentsline {paragraph}{Company 4}{30}{section*.34}
-\contentsline {chapter}{\numberline {5}Conclusion}{33}{chapter.5}
-\contentsline {chapter}{Bibliography}{35}{section*.35}
+\contentsline {section}{\numberline {3.3}Experiment using Topic Model with Background Knowledge: LDA approach}{20}{section.3.3}
+\contentsline {section}{\numberline {3.4}Experiment using Topic Model with Background Knowledge: LFLDA approach}{21}{section.3.4}
+\contentsline {chapter}{\numberline {4}Results and Discussion}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Quantitative Evaluation: Topic Coherence Value}{28}{section.4.1}
+\contentsline {section}{\numberline {4.2}Qualitative Evaluation: Review by Professional Consultant}{29}{section.4.2}
+\contentsline {paragraph}{Company 1}{31}{section*.31}
+\contentsline {paragraph}{Company 2}{32}{section*.33}
+\contentsline {paragraph}{Company 3}{33}{section*.35}
+\contentsline {paragraph}{Company 4}{34}{section*.37}
+\contentsline {chapter}{\numberline {5}Conclusion}{37}{chapter.5}
+\contentsline {chapter}{Bibliography}{39}{section*.38}

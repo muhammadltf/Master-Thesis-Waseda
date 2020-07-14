@@ -102,10 +102,11 @@ Previous researches discussed on how consensus is being built by considering a l
 \section{Organization of Thesis}
 %--------------------------------------------------------------------------
 
-In this chapter, we discussed about \underline{fundamental knowledge} of consensus building and PLM, we explained \underline{previous works} related to consensus building, and we discussed about the \underline{undiscovered aspects} on how to improve consensus building process as our hypothesis. Chapter II will explain the \underline{proposed methodology} we used to perform a digitized text mining approach to improve consensus building process. In chapter III, we \underline{conduct the experiment} to figure out the best topic model configuration to be used. Chapter IV is the \underline{implementation and validation} of our findings by quantitative evaluation and qualitative review. Finally, in chapter V, we will \underline{summarize} what we have achieved so far and provide \underline{future research directions}.
+In this chapter, we discussed about \underline{fundamental knowledge} of consensus building and PLM, we explained \underline{previous works} related to consensus building, and we discussed about the \underline{undiscovered aspects} on how to improve consensus building process as our hypothesis. Chapter~\ref{chapter_2} will explain the \underline{proposed methodology} we used to perform a digitized text mining approach to improve consensus building process. In Chapter~\ref{chapter_3}, we \underline{conduct the experiment} to figure out the best topic model configuration to be used. Chapter~\ref{chapter_4} is the \underline{implementation and validation} of our findings by quantitative evaluation and qualitative review. Finally, in Chapter~\ref{chapter_5}, we will \underline{summarize} what we have achieved so far and provide \underline{future research directions}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Chapter 2
 \chapter{Proposed Method} 
+\label{chapter_2}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Chapter 2
 
 In this research, we performed a digitized approach of dialog data from PLM-themed discussion activity sessions using data augmentation, topic model with background knowledge, and distribution similarity. First, the data will be prepared by a simple preprocess method and data augmentation. The clean and augmented data will then be experimented by various topic models and hyperparameters, we picked the best configuration and incorporate it into background-knowledge-backed topic model to generate topic distributions. Then, we will calculate the distribution similarity as convergence rate. Finally, we will compare the effectiveness of our approach to previous research and get a professional consultant to analyze the topic distribution results to have an objective review. To summarize, we will take dialog data of discussion session and transform it into topic distributions, similarity value, and most frequent words (if necessary) from each discussion session to be validated by a professional consultant.
@@ -212,6 +213,7 @@ The main feature of this topic model is by assuming that each document is sample
 
 %--------------------------------------------------------------------------
 \subsection{Latent-Feature LDA~\cite{nguyen}}
+\label{subsec_lflda}
 %--------------------------------------------------------------------------
 
 \begin{figure}[h]
@@ -221,7 +223,7 @@ The main feature of this topic model is by assuming that each document is sample
 \label{fig_lflda}
 \end{figure}
 
-This topic model doesn’t explicitly belong to ‘one-topic assumption’ category. However, this topic model is proposed together with ‘Latent-feature DMM’ so we put it under the same category for the sake of simplicity. The main feature of this topic model is by using external word vectors to perform a better inference on topic of each words. The inference is done by sampling a binary indicator variable from Bernoulli distribution to pick a new topic from Dirichlet distribution or latent feature vector.
+This topic model doesn’t explicitly belong to ‘one-topic assumption’ category. However, this topic model is proposed together with ‘Latent-feature DMM’ so we put it under the same category for the sake of simplicity. The main feature of this topic model is by using external word vectors $\omega$ to perform a better inference on topic of each words. The inference is done by sampling a binary indicator variable from Bernoulli distribution ($S$) to pick a new topic from Dirichlet distribution or latent feature vector.
 
 %--------------------------------------------------------------------------
 \subsection{Latent-Feature DMM~\cite{nguyen}}
@@ -317,6 +319,7 @@ PTM assumes that each short text is a snippet sampled from one long document $p_
 
 %--------------------------------------------------------------------------
 \subsection{Source-LDA~\cite{wood}}
+\label{subsec_src}
 %--------------------------------------------------------------------------
 
 \begin{figure}[h]
@@ -336,6 +339,7 @@ In this step, we aimed to picture the topic distribution into a single value tha
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Chapter 3
 \chapter{Experiment} 
+\label{chapter_3}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Chapter 3
 
 In this chapter, we will describe how the experiment process is done. We conducted 4 steps of experiment consists of Preprocessing, Experiment using Standard Topic Model, Experiment using background knowledge Topic Model, and Implementation (will be explained in the next chapter). The steps also shown in Fig.~\ref{fig_flow}. In the first step, we are focusing on how to prepare the data by doing preprocessing and augmentation process. Experiment using topic models focused on testing combinations of augmentation process, type of topic model, and hyperparameters by looking at their topic coherence value. Finally, implementation step focused on presenting our method by topic distributions and convergence value.
@@ -407,10 +411,11 @@ Opinion&\{short sentence consists around 5 words\} \\
 \label{fig_tme}
 \end{figure}
 
-Following data preprocessing step, topic model experiment is conducted on all topic models in Table~\ref{table 2: topic model experiment}. We used topic coherence value to evaluate topic model performance because our dataset is raw and doesn’t have any golden labels~\cite{qiang}. The result of topic model experiment is shown in Fig.~\ref{fig_tme}. The hyperparameter used in this experiment is number of iteration (1000-2000), $\alpha$ value (0.05-0.3), and $\beta$ value (0.005-0.03). The number shown in the figure is the average of topic coherence value of all possible hyperparameters for each sentence augmentation processes. Based on the number of sentence augmentation, 9 augmentation is not producing significant result while 1 augmentation gives the best and most consistent result. Self-Augment Topic Model (SATM) gives a good overall score regardless the number of sentence augmentation process. However, LDA held the best score of all experiment with 1 augmentation process. We picked LDA topic model with $\alpha$ value of 0.15, $\beta$ value of 0.01, 2000 iteration, and 1 sentence augmentation process as the best configuration.
+Following data preprocessing step, topic model experiment is conducted on all topic models in Table~\ref{table 2: topic model experiment}. We used topic coherence value to evaluate topic model performance because our dataset is raw and doesn’t have any golden labels~\cite{qiang}. The result of topic model experiment is shown in Fig.~\ref{fig_tme}. The hyperparameter used in this experiment is number of iteration (1000-2000), $\alpha$ value (0.05-0.3), and $\beta$ value (0.005-0.03). The number shown in the figure is the average of topic coherence value of all possible hyperparameters for each sentence augmentation processes. Based on the number of sentence augmentation, 9 augmentation is not producing significant result while 1 augmentation gives the best and most consistent result. Self-Augment Topic Model (SATM) gives a good overall score regardless the number of sentence augmentation process. However, we are going to choose individual score that yields the best topic coherence result. There are 2 highest score: LDA (1.306) and LFLDA (1.304) both with 1 augmentation process, $\alpha$ value of 0.15, $\beta$ value of 0.01, and 2000 iteration. In the next step, we will treat background knowledge data as additional input to LDA and LFLDA and try to score a better topic coherence.
 
 %--------------------------------------------------------------------------
-\section{Experiment using Topic Model with Background Knowledge}
+\section{Experiment using Topic Model with Background Knowledge: LDA approach}
+\label{sec_elda}
 %--------------------------------------------------------------------------
 
 \begin{figure}[h]
@@ -420,23 +425,120 @@ Following data preprocessing step, topic model experiment is conducted on all to
 \label{fig_tme2}
 \end{figure}
 
-The next step is to incorporate the best configuration into Source-LDA. Because Source-LDA is based on LDA, we only modified the hyperparameters during this experiment. Based on our proposed method in Section II, we are using PLM-themed discussion activity as our dataset. Hence, PLM topics is used as the background knowledge data. We decided to use PTC Value Roadmap\footnote{http://support.ptc.com/WCMS/files/28837/en/J1051} because it contains many PLM Topics with complete definitions for each topic. The background knowledge dataset held a relatively big size consisting of 26 topics, 1068 unique words, and 145.88 average document length.
+In this step we are going to use Source-LDA as the baseline for background knowledge-backed topic model. Because Source-LDA is based on LDA, we only modified the hyperparameters in this approach. Based on our proposed method in Chapter~\ref{chapter_2}, we are using PLM-themed discussion activity as our dataset. Hence, PLM topics is used as the background knowledge data. We decided to use PTC Value Roadmap\footnote{http://support.ptc.com/WCMS/files/28837/en/J1051} because it contains many PLM Topics with complete definitions for each topic. The background knowledge dataset held a relatively big size consisting of 26 topics, 1068 unique words, and 145.88 average document length.
 
 Fig.~\ref{fig_tme2} shows the topic coherence value relative to the number of sentence augmentation process applied to background knowledge dataset. The topic coherence value is increasing proportionally with the number of sentence augmentation. The usage of sentence augmentation on background knowledge improves topic coherence up to 3.25\%. We picked 12 sentence augmentation process on background knowledge as the best configuration.
 
-The final best configuration we found is by using LDA topic model, $\alpha$ value of 0.15, $\beta$ value of 0.01, 2000 iteration, 1 sentence augmentation on dialog dataset, and 12 sentence augmentation on background knowledge. We are planning to use this finding in future experiment.
+The best configuration we found when using Source-LDA approach is explained as follows: $\alpha$ value of 0.15, $\beta$ value of 0.01, 2000 iteration, 1 sentence augmentation on dialog dataset, and 12 sentence augmentation on background knowledge.
+
+%--------------------------------------------------------------------------
+\section{Experiment using Topic Model with Background Knowledge: LFLDA approach}
+%--------------------------------------------------------------------------
+
+In this approach, we also using Source-LDA as the baseline. We try to assimilate the characteristics of both LFLDA and Source-LDA making it a Background Knowledge-LFLDA (BK-LFLDA). During this experiment, we are using the configuration described in Section~\ref{sec_elda} that is: $\alpha$ value of 0.15, $\beta$ value of 0.01, 2000 iteration, 1 sentence augmentation on dialog dataset, and 12 sentence augmentation on background knowledge.
+
+The main feature of LFLDA, as described in Section~\ref{subsec_lflda}, is by using external word vectors and sampling a binary indicator to determine the source of generated topics. The inference process for each iteration is shown in Algorithm~\ref{alg:lflda}. Meanwhile, the topic  sampling can be seen in Equation~\ref{c_tslflda} and the categorical sampling (CatE) for latent-feature vectors is seen in Equation~\ref{c_cslflda}. In the equation, $\tau_t$ serves as the latent-feature topic vector of topic $t$ that derives from external word vector $\omega$ and re-estimated for each iteration using MAP estimation\footnote{Taken from Mallet toolkit (McCallum, 2002)}, meanwhile $\lambda$ is the probability of source to generate topics for each word.
+
+\begin{algorithm}[h]
+\caption{Inference Process of LFLDA}
+\label{alg:lflda}
+\begin{algorithmic}[1]
+\For{$iteration = 1,2,...$} 
+\For{$t \in \{1,2,...,T\}$}
+\State $\tau_t$ = MAP($\tau_t | Z,S$) 
+\EndFor
+\EndFor
+\For{$d \in \{1,...,D\}$} 
+\For{$i \in \{1,...,N_d\}$}
+\State Sample $z_{id}$ from P($z_{id}=t$|$Z_{\neg id},S,\tau,\omega$)
+\EndFor
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
+\begin{equation}
+P(z_{id} = t | Z_{\neg id},S,\tau,\omega) = (N^{t}_{d_{\neg i}} + K^{t}_{d_{\neg i}} + \alpha)((1-\lambda)\frac{N^{t,w_{d_i}}_{\neg  d_i}+\beta}{N^{t}_{\neg d_i}+V\beta}+\lambda CatE(w_{d_i}|\tau_t\omega^t))
+\label{c_tslflda}
+\end{equation}
+
+\begin{equation}
+CatE(w_{d_i}|\tau_t\omega^t)= \frac{exp(\tau_t \cdot \omega_w)}{\Sigma_{w' \in W} exp(\tau_t \cdot \omega_{w'})}
+\label{c_cslflda}
+\end{equation}
+
+In Source-LDA, as described in Section~\ref{subsec_src}, the main feature is the usage of $\delta$ that holds the information of background knowledge and how much each words deviates from our corpus. The sampling algorithm of Soure-LDA is shown in Algorithm~\ref{alg:srclda}. Meanwhile, the topic sampling process can be seen in Equation~\ref{c_tssrclda} and the generation of $\delta$ is shown in Equation~\ref{c_dsrclda} where $X_{t,w}$ resembles the frequency of word $w$ appears in topic $t$ of background knowledge and $\lambda$ serves as the probability how much background knowledge will influence topic distributions. Different with LFLDA, $\lambda$ in Source-LDA is not explicitly instantiated rather than derived from $\mu$ and $\sigma$ that acts as the mean value and standard deviation value of $\lambda$.
+
+\begin{algorithm}[h]
+\caption{Inference Process of Source-LDA}
+\label{alg:srclda}
+\begin{algorithmic}[1]
+\For{$iteration = 1,2,...$} 
+\For{$d \in \{1,...,D\}$} 
+\For{$i \in \{1,...,N_d\}$}
+\State Sample $z_{id}$ from P($z_{id}=t$|$Z_{\neg id},\delta$)
+\EndFor
+\EndFor
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
+\begin{equation}
+P(z_{id}=t|Z_{\neg id},\delta)=(N^{t}_{d_{\neg i}} + K^{t}_{d_{\neg i}} + \alpha)(\frac{N^{t,w_{d_i}}_{\neg  d_i}+\delta_{t,w_{d_i}}}{N^{t}_{\neg d_i}+\Sigma_a^V \delta_{a,t}})
+\label{c_tssrclda}
+\end{equation}
+
+\begin{equation}
+\delta_t = (X_{t,1}^\lambda,X_{t,2}^\lambda,...,X_{t,V}^\lambda) 
+\label{c_dsrclda}
+\end{equation}
+
+In our approach, we tried to combined both main features of LFLDA and Source-LDA by using LFLDA's topic sampling pattern i.e. using word vectors and binary indicator, and using Source-LDA's $\delta$ to take background knowledge into account. Plate notation of BK-LFLDA is shown in Fig.~\ref{fig_bklflda}. In BK-LFLDA, we completely remove the LDA-style in topic inference e.g. $\beta$ value. The inference process is shown in Algorithm~\ref{alg:bklflda} and the topic sampling can be seen in Equation~\ref{c_tsbklflda}. The categorical sampling for latent-feature vectors and the generation of $\delta$ is still using the same method as their predecessors.
+
+\begin{figure}[h]
+	\centering
+	\fbox{\includegraphics[scale=0.65]{images/BK-LFLDA.png}}
+	\caption{BK-LFLDA Plate Notation}
+\label{fig_bklflda}
+\end{figure}
+
+\begin{algorithm}[h]
+\caption{Inference Process of BK-LFLDA}
+\label{alg:bklflda}
+\begin{algorithmic}[1]
+\For{$iteration = 1,2,...$} 
+\For{$t \in \{1,2,...,T\}$}
+\State $\tau_t$ = MAP($\tau_t | Z,S$) 
+\EndFor
+\For{$d \in \{1,...,D\}$} 
+\For{$i \in \{1,...,N_d\}$}
+\State Sample $z_{id}$ from P($z_{id}=t$|$Z_{\neg id},S,\tau,\omega,\delta$)
+\EndFor
+\EndFor
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
+\begin{equation}
+P(z_{id} = t | Z_{\neg id},S,\tau,\omega,\delta) = (N^{t}_{d_{\neg i}} + K^{t}_{d_{\neg i}} + \alpha)((1-\lambda)\frac{N^{t,w_{d_i}}_{\neg  d_i}+\delta_{t,w_{d_i}}}{N^{t}_{\neg d_i}+\Sigma_a^V \delta_{a,t}}+\lambda CatE(w_{d_i}|\tau_t\omega^t))
+\label{c_tsbklflda}
+\end{equation}
+
+
+The experiment was done by calculating topic coherence value and modifying $\lambda$ to see whether $\delta$ or word vectors is significantly influence topic quality. Based on the result in Fig.~\ref{fig_tmbklflda}, we conclude that the mixture of both topic sampling using $\delta$  and word vectors gives the best result using $\lambda$=0.4.
+
+\begin{figure}[h]
+	\centering
+	\fbox{\includegraphics[scale=0.65]{images/new-topic4.pdf}}
+	\caption{Topic Coherence Score of BK-LFLDA based on lambda value}
+\label{fig_tmbklflda}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Chapter 4
 \chapter{Results and Discussion} 
+\label{chapter_4}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Chapter 4
 
-This chapter will explain ‘implementation step’ as described in previous paragraph. First, we will quantitatively compare the quality of topic distributions generated using our recommended configuration to previous research~\cite{goto2}. Then, we will ask a professional consultant to do qualitative evaluation towards our result.
-
-%--------------------------------------------------------------------------
-\section{Quantitative Evaluation: Topic Coherence Value}
-%--------------------------------------------------------------------------
-
-We compared our findings with previous research~\cite{goto2} as shown in Fig.~\ref{fig_tme3}. We compared between both approaches using topic coherence value. We improved the result by 6.34\% by utilizing data augmentation and background knowledge.
+This chapter will explain ‘implementation step’ as described in previous paragraph. First, we will quantitatively compare the quality of topic distributions generated using our proposal to previous research~\cite{goto2}. Then, we will ask a professional consultant to do qualitative evaluation towards our result.
 
 \begin{figure}[h]
 	\centering
@@ -444,6 +546,21 @@ We compared our findings with previous research~\cite{goto2} as shown in Fig.~\r
 	\caption{Topic Coherence value comparison with previous research}
 \label{fig_tme3}
 \end{figure}
+
+%--------------------------------------------------------------------------
+\section{Quantitative Evaluation: Topic Coherence Value}
+%--------------------------------------------------------------------------
+
+We compared our findings with previous research~\cite{goto2} as shown in Fig.~\ref{fig_tme3} using topic coherence value. We improved the result by up to 9.04\% by utilizing data augmentation and background knowledge.
+
+\begin{figure}[b]
+	\centering
+	\fbox{\includegraphics[scale=0.65]{images/new-topic5.pdf}}
+	\caption{Similarity Measurement between topic distributions of Source-LDA w/ custom hyperparameter and BK-LFLDA}
+\label{fig_tme5}
+\end{figure}
+
+In the next section, we will do qualitative evaluation of the generated topic distributions. However, despite of the highest topic coherence score was achieved by BK-LFLDA, we feel that it is better to use Source-LDA with custom hyperparameters as it has been tested in baseline dataset e.g. Wikipedia, Reuters, GoogleNews, etc. Using JS Divergence, we also show how much of difference occurs between topic distributions generated by Source-LDA with custom hyperparameters and topic distributions generated BK-LFLDA in Fig.~\ref{fig_tme5}. The resuls shows that there is not much difference in terms of topics distributions with similarity value above 95\% for each company.
 
 %--------------------------------------------------------------------------
 \section{Qualitative Evaluation: Review by Professional Consultant}
@@ -596,11 +713,12 @@ Based on our analysis and feedback from professional consultant. We feel that ou
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Chapter 5
 \chapter{Conclusion} 
+\label{chapter_5}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Chapter 5
 
-In this paper, we analyzed a new digitized approach to improve consensus building process in discussion activity held within industrial engineering context (PLM-themed). Our proposed method consists of performing data augmentation, implementing topic model with background knowledge, and calculating the distribution similarity. Finally, we validate the result on professional consultant. We received good feedback which validates our purpose of using a new approach to improve consensus building process. Moreover, we also found that using data augmentation and background knowledge in topic modeling will improve its topic quality.
+In this paper, we analyzed a new digitized approach to improve consensus building process in discussion activity held within industrial engineering context (PLM-themed). Our proposed method consists of performing data augmentation, implementing topic model with background knowledge, and calculating the distribution similarity. Finally, we validate the result on professional consultant. We received good feedback which validates our purpose of using a new approach to improve consensus building process. We also found that using data augmentation and background knowledge in topic modeling will improve its topic quality. Moreover, BK-LFLDA as our proposed model also yields a better result compared to previous research when using PLM dialog data and PLM background knowledge. 
 
-However, further approach is still necessary based on two perspective: consensus building and topic modeling. From consensus building perspective, we still need to assure the emotional state of discussion participants when dialog data is recorded. Some variables might aspect the quality and consistency of participant’s opinion. Meanwhile from topic modeling perspective, we are planning to expand Source-LDA so it can afford different data representation like BTM and WNTM does.
+However, further approach is still necessary based on two perspective: consensus building and topic modeling. From consensus building perspective, we still need to assure the emotional state of discussion participants when dialog data is recorded. Some variables might aspect the quality and consistency of participant’s opinion. Meanwhile from topic modeling perspective, we still need to test BK-LFLDA more to validate that our proposal beats state-of-the-art method. Furthermore, we are planning to expand Source-LDA so it can afford different data representation like BTM and WNTM does.
 
 \bibliographystyle{plain}
 \bibliography{references}
